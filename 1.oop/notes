@@ -1,0 +1,20 @@
+OOP
+
+1. Abstraction
+    Users need to know what the system does 
+    and not how the system does it
+
+    Simplify
+
+    Interface is object behaviors you expose to the outside world
+    so your users can effectively use the system.
+
+2. Encapsulation
+
+    Protect system for being abused
+
+    Think of a Car radio interface
+    a. what all does it do.
+    b. how does it do it
+
+    Radio.java
