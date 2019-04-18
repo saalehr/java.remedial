@@ -1,0 +1,51 @@
+
+    Identifiers & JavaBeans 
+
+        RegEx Pattern
+            [a-zA-Z$_][a-zA-Z$_]*[a-zA-Z$_0-9]*
+            Cannot start with a number
+
+        No Keywords: enum, class, if, etc.
+        Case Sensitive
+
+        Purpose & Naming Convention
+            class, interface
+                Radio
+                Box
+                Tire
+
+                Paintable
+                Comparable
+            method
+                add
+                volumeUp
+                addPressure
+                
+            variable
+                volume
+                innerTube
+
+            constant
+                MAX_RAM_SUPPORT
+                MIN_AGE
+
+
+    Class Declarations and Modifiers 
+        one public class per file
+        the public class should be name after the filename
+
+        Access                  Child Access    Same Package(Dir)     Other Access   Same Class
+            public                      Y               Y                    Y             Y 
+            protected                   Y               N                    Y             Y     
+            --                          N               N                    N             Y
+            private                     N               N                    N             Y
+
+
+        Non-access
+            final
+                class: cannot extend
+                variable: constant
+                method: cannot override
+            abstract
+            transient
+            static
