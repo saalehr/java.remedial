@@ -34,10 +34,10 @@
         one public class per file
         the public class should be name after the filename
 
-        Access                  Child Access    Same Package(Dir)     Other Access   Same Class
+        Access                  Child Access    Same Package(Dir)     Other Package   Same Class
             public                      Y               Y                    Y             Y 
             protected                   Y               N                    Y             Y     
-            --                          N               N                    N             Y
+            --                          N               Y                    N             Y
             private                     N               N                    N             Y
 
 
@@ -49,3 +49,31 @@
             abstract
             transient
             static
+
+    The main method
+
+        Entry point for stand-alone Java application.
+            public static void main(String[] args)
+        
+        Local variables must be initialized, otherwise:
+            Compile-time Error: local variable may not have been initialized
+            
+        Member variables are initialized to null by default
+        Using constructors you can set proper initial values for member variables
+
+    Constructors
+        You can initialize your object's state here.
+        Method named after the class name and is invoked during instantiation
+        The keyword 'new' instantiates a type via its constructor and returns a reference
+        Java provides a default no-arg constructor if you don't write any constructors.
+
+    JavaBeans
+        By convention class variables are generally made private
+        public accessor and mutator methods are created to allow change
+        1. Has a default constructor
+        2. Has accessor and mutator methods
+        3. Persistence
+
+        When your class follows JavaBean conventions, it is considered a JavaBean.
+        Why? JavaBeans play well with most java frameworks
+

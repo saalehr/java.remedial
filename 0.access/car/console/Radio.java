@@ -12,6 +12,10 @@ import car.console.Band;
 public class Radio {
     final Integer MAX_CHANNELS = 6;
 
+    public Radio() {
+        currentVolume = 20;
+    }
+
     Channel channels[];
     Integer currentFrequency;
     Integer currentVolume;
@@ -20,18 +24,18 @@ public class Radio {
     public void volumeUp() {
         currentVolume++;
     }
-    void volumeDown() { 
+    public void volumeDown() { 
         currentVolume--;
     }
 
-    void tuneUp() {
+    public void tuneUp() {
         currentFrequency++;
     }
-    void tuneDown() {
+    public void tuneDown() {
         currentFrequency--;
     }
 
-    void switchBand(Band band) {
+    public void switchBand(Band band) {
         currentBand = band;
     }
 
@@ -40,16 +44,20 @@ public class Radio {
      * Seek left off due to complexity
      *
      */
-    void seekUp() {}
-    void seekDown() {}
+    public void seekUp() {}
+    public void seekDown() {}
 
-    void saveChannel(Integer position) {
+    public void saveChannel(Integer position) {
         if (position < MAX_CHANNELS ) {
             Channel channel = new Channel();
             channel.band = currentBand;
             channel.frequency = currentFrequency; 
             channels[position] = channel;
         }
+    }
+
+    public String showState() {
+        return "C: " + currentVolume + " B:" + currentBand + " F:" + currentFrequency;
     }
 }
 
