@@ -18,3 +18,47 @@ OOP
     b. how does it do it
 
     Radio.java
+
+Review:
+    Constructor (default)
+    Local Variable vs. Member Variable
+        Shadowing (where you need to use keyword this)
+        Initialization & defaults
+    JavaBean 
+
+
+3. Inheritance
+    Code Reuse: DRY - Do not repeat yourself
+    Cohesion:   Focused modules
+    Loose Coupling: Establishing just enough module connections. Not too many not too few
+
+    IS-A ...    Generalization
+    Has-A ...   Composition / Aggregation
+
+    Specialized classes help reduce bugs. More likely for it to be reusable. e.g. Radio, Channel and Band.
+
+    keyword: extends
+
+    Inheritance rules: 
+        * By default Java calls default constructors of all superclasses (parents) in the hierarchy
+        before instantiating a subclass (child).
+        * The subclass inherits methods and member variables it has access to (effect of modifiers)
+        * The subclass may choose to change the behavior of (override) methods defined in the superclass
+        * Calling the superclass version of an overriden method may be helpful. keyword super can be used.
+            e.g calling arg constructor instead of the no-arg
+        * final classes cannot be extended
+
+   Method Signature:
+        public          String           addNumbers(number1, number2)
+        ############    +++++++++++      ----------------------------
+        access level    return type      method signature: type and order of arguments
+
+   Overriding rules: 
+        * Declaration must match the method signature of the parent class. 
+        * Return type must pas the IS-A test with return type of the parent method.
+        * Access level can be equal or less restrictive than the overriden method.
+        * final methods cannot be overriden
+
+    Hidden inheritance rules in Java. We'll talk this next.
+
+4. Polymorphism

@@ -57,7 +57,7 @@ public class Radio {
     }
 
     public String showState() {
-        return "C: " + currentVolume + " B:" + currentBand + " F:" + currentFrequency;
+        return "V: " + currentVolume + " B:" + currentBand + " F:" + currentFrequency;
     }
 }
 
