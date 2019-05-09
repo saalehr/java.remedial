@@ -60,5 +60,17 @@ Review:
         * final methods cannot be overriden
 
     Hidden inheritance rules in Java. We'll talk this next.
+        Implicit super constructor call.
+            Design Pattern: Chain of Responsibility
+        Class Object is the root of the class hierarchy. Every class has Object as a superclass.
+        Access modifiers of subclass method cannot be more restrictive than the method it overrides
+
+    Java API: Core javadoc for a given class for a version of Java
+        Google: Java 8 Object
+        IntelliJ shortcut: Ctrl+Q
 
 4. Polymorphism
+
+    static & dynamic
+
+
