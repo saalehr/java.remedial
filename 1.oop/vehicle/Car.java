@@ -5,6 +5,8 @@ public class Car extends Vehicle
     protected String make;
     protected String model;
 
+    public Integer fuel = 0;
+
     public Car() {
         // Super class constructor call
         // super();
@@ -23,4 +25,10 @@ public class Car extends Vehicle
     public void drive () {
         System.out.println("Driving Car");
     }
+
+    public String toString() {
+        System.out.println("Calling Car's toString method");
+        return "Name: " + name + " Top Speed: " + topSpeed + " Fuel: " + fuel;
+    }
+
 }

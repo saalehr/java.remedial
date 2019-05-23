@@ -69,8 +69,29 @@ Review:
         Google: Java 8 Object
         IntelliJ shortcut: Ctrl+Q
 
+    @Override
+    >> Good practice:
+        The purpose is to clarify your intention with the compiler. Asks compiler to enforce 
+        overriding of a super method rather than creating new e.g. misspelling, overloading.
+
+    >> Key Concept: @Override is a type of annotation. Annotations are directives added above class, variable, and method declarations to alter their use.
+
+    toString
+        Inherited from Object. It's a protocol used by Java core and 3rd party libraries e.g println
+        to render a representation of the object content
+
 4. Polymorphism
 
-    static & dynamic
+    Definition: The condition of occurring in several different forms.
+
+    static: Compile Time
+    
+    Overloading: declaring same method name w/ different signatures in a given class
+
+        It is simply a convenience for developers to use the same method name
+        with different argument listing to accomplish different but related goals 
+
+
+    dynamic: Run Time
 
 

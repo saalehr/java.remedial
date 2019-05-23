@@ -8,5 +8,8 @@ Part II
 1. Make note of the electronic devices near you and discover generalization relationships.
 2. Create a UML diagram highlighting important aspects of your classes.
 3. Generate Java classes using the CAID utility or type away on your own.
-2. Subclass should introduce attributes in addition to receiving those from the parent.
-3. Subclass should initialize its members using its constructor with the help from the superclass constructor.
+4. Subclass should introduce attributes in addition to receiving those from the parent.
+5. Subclass should initialize its members using its constructor with the help from the superclass constructor.
+
+6. Implement toString to demonstrate functionality 
+7. Create a TestElectronics class to showcase your objects and their relations
