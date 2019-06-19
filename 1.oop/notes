@@ -91,7 +91,17 @@ Review:
         It is simply a convenience for developers to use the same method name
         with different argument listing to accomplish different but related goals 
 
+        Promotes convenience
+
 
     dynamic: Run Time
+
+
+    Definition: Polymorphism lets you use a more abstract supertype (including an interface)
+        reference to refer to one of its subtypes (including interface implementers).
+
+
+        Promotes reuse
+
 
 

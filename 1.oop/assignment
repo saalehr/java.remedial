@@ -13,3 +13,7 @@ Part II
 
 6. Implement toString to demonstrate functionality 
 7. Create a TestElectronics class to showcase your objects and their relations
+
+Part III
+
+1. Demonstrate polymorphism using a TestElectronics class. See TestAnimal.java

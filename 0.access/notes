@@ -49,6 +49,9 @@
             abstract
             transient
             static
+                static variables are instantiated once for the class.
+                they travel with the class not with the objects
+                static methods can be invoked using the class name rather than an instance reference
 
     The main method
 
@@ -77,3 +80,10 @@
         When your class follows JavaBean conventions, it is considered a JavaBean.
         Why? JavaBeans play well with most java frameworks
 
+    
+    Exceptions
+        Exceptional scenarios that the program runs into.
+
+        NPE: NullPointerException
+            By far the most common type of exception and the most difficult to troubleshoot.
+            Happens when: a method is invoked on a reference with null value
