@@ -1,0 +1,48 @@
+
+bash shortcuts
+----------
+!! - repeat last command
+!$ - repeat last word on the last command
+!5 - repeat 5th last command from history
+Up / Down - navigate through the history
+Home - Beginning of the line
+End - End of the line
+Ctrl+XX - Move freely across the line
+
+unix utilities
+----------
+cat - output the contents of a text file
+more - show the contents of a text file page by page - Use space or Ctrl+F and Ctrl+B to navigate
+less - less is more (no really though), difference is less is faster at it loads file in memory a page at a time however more is almost always built in while less may not be.
+man - manual page for any unix command or utility
+ls -la (ll for short) - long listing including hidden files (files starting with .)
+touch - create a new zero-sized file
+vi - de facto standard unix editor
+	its a shortcut heaven / hell, you decide! see cheatsheet
+	three main modes and 2 sub-modes
+		visual - default when you open a file
+		insert - text manipulation keys get you into the insert mode
+			hit escape to get back out into the visual mode
+		replace sub-mode - edits in place
+		command - from the visual mode hit :
+		command+pipe sub-mode
+			from the visual mode hit ! - pipes current line
+			! followed by a navigation pipes the lines into cmd line
+	uses ~/.vimrc as a configuration file
+		these could also be applied in the command mode in vi
+		shiftwidth (sw)
+		tabstop (ts)
+		autoindent (ai)
+		textwidth=80
+		map - enables keyboard shortcuts. 
+			can be used to chain commands using the enter character.
+			such as save file, compile, then run. a bit tricky
+		abbr - autocorrection could be helpful for short code snippets
+
+unix core concepts
+----------
+~ - home directory of the user
+| - send the output one command as an input to the next
+putty - a terminal emulator utility that allows you to connect to remote hosts.
+MinGW - Unix emnulator for windows, for remote ssh simply use the ssh command 
+	within minGW, the environment that ships with git bash.
